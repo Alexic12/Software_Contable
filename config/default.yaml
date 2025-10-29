@@ -1,0 +1,33 @@
+# Default configuration for FINCOUNT
+# Copy this file to config.local.yaml and customize as needed
+
+# Application Settings
+app:
+  name: "FINCOUNT"
+  version: "0.1.0"
+  debug: false
+  log_level: "INFO"
+
+# Database Configuration
+database:
+  type: "sqlite"
+  path: "data/fincount.db"
+  echo: false
+
+# Localization
+locale:
+  default_language: "en"
+  default_currency: "USD"
+  timezone: "UTC"
+
+# Security
+security:
+  secret_key: "change-this-in-production"
+  session_timeout: 3600
+  password_min_length: 8
+
+# Features
+features:
+  multi_currency: true
+  audit_trail: true
+  export_formats: ["pdf", "xlsx", "csv"]

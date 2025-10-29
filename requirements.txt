@@ -1,0 +1,7 @@
+# FINCOUNT - Financial Accounting Software
+# Python Dependencies
+# 
+# Usage:
+#   pip install -r requirements.txt
+#
+# For development dependencies, see requirements-dev.txt
