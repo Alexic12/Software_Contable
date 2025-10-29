@@ -50,9 +50,10 @@ setup(
             "mypy>=1.5.0",
         ],
     },
-    entry_points={
-        "console_scripts": [
-            "fincount=fincount:init",
-        ],
-    },
+    # Entry points will be added when CLI interface is implemented
+    # entry_points={
+    #     "console_scripts": [
+    #         "fincount=fincount.cli:main",
+    #     ],
+    # },
 )

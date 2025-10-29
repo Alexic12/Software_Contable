@@ -44,8 +44,9 @@ Documentation = "https://github.com/Alexic12/Software_Contable/docs"
 Repository = "https://github.com/Alexic12/Software_Contable"
 "Bug Tracker" = "https://github.com/Alexic12/Software_Contable/issues"
 
-[project.scripts]
-fincount = "fincount:init"
+# Entry points will be added when CLI interface is implemented
+# [project.scripts]
+# fincount = "fincount.cli:main"
 
 [tool.setuptools]
 package-dir = {"" = "src"}
@@ -78,6 +79,7 @@ extend-exclude = '''
 minversion = "7.0"
 addopts = "-ra -q --strict-markers --cov=fincount --cov-report=term-missing"
 testpaths = ["tests"]
+pythonpath = ["src"]
 python_files = ["test_*.py"]
 python_classes = ["Test*"]
 python_functions = ["test_*"]
